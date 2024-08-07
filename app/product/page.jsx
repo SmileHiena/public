@@ -1,4 +1,3 @@
-import Bestsale from "../component/BestSale";
 import Hot from "../component/Hot";
 import ProductCard from "../component/ProductCard";
 import CategoryProducts from "../component/CategoryProducts";
@@ -19,8 +18,7 @@ export default async function Product() {
   const hotRes = await fetch("http://localhost:3000/products/hot", {cache: "no-store",});
   const hotProducts = await hotRes.json();
 
-  const bestsaleRes = await fetch("http://localhost:3000/products/bestsale", {cache: "no-store",});
-  const bestsaleProducts = await bestsaleRes.json();
+
   return (
     <>
       <div className="background_bg">
